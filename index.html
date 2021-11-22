@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tabs</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: slategray;
+        }
+        .tab-wrap{
+            width: 600px;
+            position: relative;
+            padding: 0;
+            margin: 50px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        input[type='radio']{
+           display: none;
+        }
+        .tab{
+            background-color: orange;
+            display: inline-block;
+            padding: 20px 20px;
+            margin: 0 10px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .tab-wrap li{
+            float: left;
+        }
+        .tab-wrap .tab-contant{
+            background-color: white;
+            padding: 20px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            box-sizing: border-box;
+            display: none;
+            border-radius: 0 3px 3px 3px;
+        }
+        .tab-wrap input[id^='tab']:checked +label{
+            background-color: white;
+            
+        }
+        .tab-wrap input[id^='tab']:checked ~ .tab-contant{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-wrap">
+        <ul>
+            <li>
+                <input type="radio" id="tab-1" name="tab" checked>
+                <label for="tab-1" class="tab">Tab 1</label>
+                <div class="tab-contant">
+                    <h1>Tab Contant 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat vitae? Doloremque, libero temporibus? Aspernatur, deleniti quas voluptate iste harum illum fugit officiis nihil magni natus, quae eaque iure dolor odit quia id animi vel libero! Dolore aut amet facere perspiciatis itaque! Praesentium ipsum blanditiis accusamus neque a est eum ducimus, dolore ratione commodi porro minus illo aperiam, distinctio in! Mollitia in delectus, explicabo dolore quisquam, nesciunt quas aspernatur, nemo cumque commodi nulla enim ab autem blanditiis ad accusantium ipsum quibusdam vitae consequuntur optio aliquid inventore nobis! Cupiditate illum, vero officiis fugiat, sit sequi voluptate sapiente quo suscipit quibusdam placeat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo, qui numquam accusantium cupiditate earum exercitationem dolore incidunt tempore quam nam officiis quaerat beatae recusandae itaque. Aperiam velit ad sequi, rerum aut perspiciatis esse quasi nobis, autem expedita alias voluptates mollitia reprehenderit non? Sint labore cupiditate vel, deserunt tempore ex necessitatibus saepe consequatur voluptatum accusamus corporis velit, culpa perspiciatis officia optio aliquam repellat, minima nostrum asperiores ullam nisi? Incidunt, natus. Labore accusamus ea quos, nesciunt quasi fugiat ullam tempora quo.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" id="tab-2" name="tab">
+                <label for="tab-2" class="tab">Tab 2</label>
+                <div class="tab-contant">
+                    <h1>Tab Contant 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat vitae? Doloremque, libero temporibus? Aspernatur, deleniti quas voluptate iste harum illum fugit officiis nihil magni natus, quae eaque iure dolor odit quia id animi vel libero! Dolore aut amet facere perspiciatis itaque! Praesentium ipsum blanditiis accusamus neque a est eum ducimus, dolore ratione commodi porro minus illo aperiam, distinctio in! Mollitia in delectus, explicabo dolore quisquam, nesciunt quas aspernatur, nemo cumque commodi nulla enim ab autem blanditiis ad accusantium ipsum quibusdam vitae consequuntur optio aliquid inventore nobis! Cupiditate illum, vero officiis fugiat, sit sequi voluptate sapiente quo suscipit quibusdam placeat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam accusamus ratione repudiandae. Numquam commodi in officiis eligendi laboriosam, sit cupiditate provident accusamus, aliquam, et eos consequatur modi deleniti libero. Magni blanditiis officia laboriosam inventore quod ab error sit in totam, nobis excepturi dolores distinctio eos rerum! Veniam, soluta iure expedita placeat sunt illo delectus dolorem sed. Nemo assumenda iusto numquam ducimus perferendis perspiciatis corrupti minima magni nostrum atque dolor unde, voluptatum quod inventore, ab vel sapiente ullam minus at deleniti consectetur? Voluptatibus ipsum quaerat, nisi ratione obcaecati et vitae error, aperiam voluptates tempore similique culpa. Vel libero eum temporibus.</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" id="tab-3" name="tab">
+                <label for="tab-3" class="tab">Tab 3</label>
+                <div class="tab-contant">
+                    <h1>Tab Contant 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat vitae? Doloremque, libero temporibus? Aspernatur, deleniti quas voluptate iste harum illum fugit officiis nihil magni natus, quae eaque iure dolor odit quia id animi vel libero! Dolore aut amet facere perspiciatis itaque! Praesentium ipsum blanditiis accusamus neque a est eum ducimus, dolore ratione commodi porro minus illo aperiam, distinctio in! Mollitia in delectus, explicabo dolore quisquam, nesciunt quas aspernatur, nemo cumque commodi nulla enim ab autem blanditiis ad accusantium ipsum quibusdam vitae consequuntur optio aliquid inventore nobis! Cupiditate illum, vero officiis fugiat, sit sequi voluptate sapiente quo suscipit quibusdam placeat.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
